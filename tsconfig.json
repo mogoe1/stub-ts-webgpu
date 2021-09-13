@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "module": "ES2020",
+        "target": "ES2021",
+        "noImplicitAny": true,
+        "removeComments": false,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "outDir": "./dist",
+        "declaration": false,
+        "moduleResolution": "Node",
+        "preserveWatchOutput": true
+    },
+    "include": [
+        "src/**/*.ts"
+    ]
+}

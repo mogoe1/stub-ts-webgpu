@@ -1,0 +1,38 @@
+{
+  "name": "tmpl-ts-webgpu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint ./src/script/**",
+    "lint:fix": "eslint ./src/script/** --fix",
+    "watch": "npm run watch:ts & npm run watch:assets & npm run watch:dist",
+    "watch:assets": "cpx \"./src/assets/**\" ./dist/ -v -w",
+    "watch:ts": "tsc --watch --preserveWatchOutput",
+    "watch:dist": "web-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mogoe1/tmpl-ts-webgpu.git"
+  },
+  "author": "mogoe1",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mogoe1/tmpl-ts-webgpu/issues"
+  },
+  "homepage": "https://github.com/mogoe1/tmpl-ts-webgpu#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.17.0",
+    "@typescript-eslint/parser": "^4.17.0",
+    "@web/dev-server": "^0.1.18",
+    "cpx": "^1.5.0",
+    "eslint": "^7.31.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "typedoc": "^0.21.4",
+    "typescript": "^4.3.5"
+  }
+}
